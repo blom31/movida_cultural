@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    }
+    
+    body{
+        background-color: #131612;
+    }
+    header{
+        min-height: 100vh;
+    }
+
+    /** Menu  fijo superpuesto al carrusel */
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+.alinear{
+    justify-content: space-evenly;
+    font-weight: 300;
+}
+ /**Carrusel */
+.carrusel{
+    position: relative;
+    top: 0px;
+    width:100%;
+}
+.carrusel_img img{
+    width: 100%;
+    height: auto; 
+    max-height: 95vh; 
+    object-fit: cover;
+}
+.carrusel_tex{
+    backdrop-filter: blur(2px);    padding: 5px;
+}
+
+ /** Noticias */
+.noticias{
+    text-align: center;
+}
+.noticias h1, h2{
+    font-style: italic;
+    color: #e2e2e2;
+}
+
+ /** Noticias --> Tarjetas */
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.tarjeta{
+    width: 300px;
+    height: 450px;
+}
+.tarjeta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 15px 15px 10px #0a0a0ace;
+}
+.tarjeta_titulo{
+    margin-top: 10px;
+}
+.tarjeta span{
+    color:#99f04d ;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+/** Galeria*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Para la primera y última fila */
+    grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+    grid-template-areas:
+        "foto1 foto2 foto3 "
+        "foto4 foto5 foto5" 
+        "foto6 foto7 foto8";
+    gap: 15px;
+    width: 90%; /* Ajusta el ancho del contenedor */
+    height: 70vh; /* Define la altura total de la galería */
+    margin: 6em auto 0 auto;
+}   
+.foto1{
+    grid-area: foto1;
+}
+.foto2{
+    grid-area: foto2;
+}
+.foto3{
+    grid-area: foto3;
+}
+.foto4{
+    grid-area: foto4;
+}
+.foto5{
+    grid-area: foto5;
+}
+.foto6{
+    grid-area: foto6;
+}
+.foto7{
+    grid-area: foto7;
+}
+.foto8{
+    grid-area: foto8;
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/** Cartelera*/
+.cartelera {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    align-items: center;
+    justify-content: center; 
+    padding: 1.5rem; 
+}
+.cartelera_col1{
+    flex: 1;
+    min-width: 300px;
+    margin-left: 5em;
+    margin-top: 80px;
+}
+.lugar{
+    font-size: 1.5em;
+    color: #fff2a2;
+    font-style: italic;
+}
+.cartelera_titulo{
+    color: #99f04d;
+    font-size: 3.5em;
+}
+.intro{
+    font-size: 1em;
+    color: white;
+    font-style: normal;
+}
+.sinopsis{
+    color: white;
+    font-weight: 200;
+}
+.entradas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.entradas p{
+    color: white;
+}
+.entradas ul{
+    list-style: none;
+}
+.entradas a {
+    text-decoration: none;
+    color: #00dbe5;
+}
+.entradas a:hover {
+    color: #99f04d;
+}
+.cartelera_col2{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.obras {
+    max-width: 250px; 
+    aspect-ratio: 3 / 4; 
+    padding: 10px;
+}
+.obras img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 15px 15px 10px #0a0a0ace;
+}
+.obras .fecha{
+    margin-top:1.5em;
+    color:#99f04d ;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+.obras .intro  {
+    font-size: 1em;
+    color: white;
+    font-style: normal;
+}
+hr{
+    color: #99f04d;
+}
+/** Footer*/
+.foot{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_col1{
+}
+.marca{
+    display: flex;
+    gap: 5px;
+}
+.marca p{
+    margin: 5px;
+    font-weight: 600;
+}
+.list_col1{
+    margin-top: 5px;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+}
+.opciones a{
+    text-decoration: none;
+    color: white;
+}
+.opc_redes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0;
+}
+.opc_redes i{
+    padding-right: 10px;
+}
+.opc_redes a{
+    text-decoration: none;
+    color: white;
+}
+.btn_suscribir{
+    background-color: #99f04d;
+}
+.copy{
+    font-size: 12px;
+    margin: 15px;
+}
+
+ /*! Media Queries */
+    @media screen and (max-width: 768px){
+        header{
+            min-height: 85vh;
+            }
+        .menu{
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .registro{
+            display: none;
+        }
+        .tarjetas{
+            padding: 5px;
+            margin-bottom: 1em;
+        }
+        .tarjeta{
+            width: 200px;
+            height: 350px;
+        }
+        .galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "foto1 foto2"
+                "foto3 foto4";
+            height: auto;
+        }
+        .foto5, .foto6, .foto7, .foto8{
+            display: none;
+        }
+        .cartelera {
+            flex-direction: column; 
+            align-items: center;
+            margin-top: 0;
+            padding: 0;
+        }
+        .cartelera_col1 {
+            text-align: center; 
+            margin-left: 0;
+        }
+        .lugar{
+            font-size: 1em;
+        }
+        .intro{
+            text-transform: capitalize;
+        }
+        .cartelera_titulo{
+            font-size: 1.5em;
+        }
+        .cartelera_col2 {
+            flex-direction: column;
+            align-items: center;
+        }
+        .obras {
+            margin-bottom: 7em;
+        }
+        .sinopsis{
+            display: none;
+        }
+        .foot{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        header{
+            min-height: 60vh;
+        }
+        .menu{
+            background-color: initial;
+            backdrop-filter: none;
+        }
+        .tarjetas{
+            flex-direction: column;
+            align-items: center;
+        }
+        .tarjeta{
+            width: 200px;
+            height: 350px;
+            margin: 3em;
+        }
+        .foto5, .foto6, .foto7, .foto8{
+            display: none;
+        }
+    }    
+    
+    @media screen and (max-width: 375px){
+        header{
+            min-height: 50vh;
+        }
+        .noticias{
+            margin-top: -1em;
+        }
+
+    }
+    @media screen and (max-width: 320px){
+        header{
+            min-height: 45vh;
+        }
+    }

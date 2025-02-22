@@ -18,14 +18,14 @@
         <nav class="navbar navbar-expand-md navbar-light bg-transparent menu">
             <div class="container-fluid">
                 <a class="navbar-brand"  href="index.html">
-                    <img src="assets/img/logo.png" alt=""></a>
+                    <img src="assets/img/logo.png" alt="Logo de la pagina Movida cultural"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse fondo_collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 container alinear">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link  text-white" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="pages/museo.html">Museo</a>
@@ -100,16 +100,18 @@
                     </div>
                 </div>
                 <div class="tarjeta">
-                    <img src="./assets/img/poster-cine.jpg" alt="">
+                    <a href="./pages/cine.html">
+                    <img src="./assets/img/poster-cine.jpg" alt="Poster de la pelicula Dolce vita"></a>
                     <div>
                         <h2 class="tarjeta_titulo">La Dolce Vita</h2>
                         <span>25 de febrero</span>
                     </div>
                 </div>
                 <div class="tarjeta">
-                    <img src="./assets/img/poster-teatro.jpg" alt="">
+                    <a href="./pages/teatro.html">
+                    <img src="./assets/img/teatro_tango.jpg" alt="tango porteño"><a href="./pages/cine.html"></a>
                     <div>
-                        <h2 class="tarjeta_titulo">Romeo y Julieta</h2>
+                        <h2 class="tarjeta_titulo">Tango Porteño</h2>
                         <span>8 de marzo</span>
                     </div>
                 </div>
@@ -118,14 +120,14 @@
 
         <!--* GALERÍA  -->
         <section class="galeria ">
-            <img src="assets/img/evento-1.jpg" alt="" class="foto1">
-            <img src="assets/img/evento-2.jpg" alt="" class="foto2">
-            <img src="assets/img/evento-3.jpg" alt="" class="foto3">
-            <img src="assets/img/evento-4.jpg" alt="" class="foto4">
-            <img src="assets/img/evento-1.jpg" alt="" class="foto5">
-            <img src="assets/img/evento-2.jpg" alt="" class="foto6">
-            <img src="assets/img/evento-3.jpg" alt="" class="foto7">
-            <img src="assets/img/evento-4.jpg" alt="" class="foto8">
+            <img src="assets/img/juegos-fabrica-obras-teatro-buenos-aires-1.jpg" alt="obra juego fabrica" class="foto1">
+            <img src="assets/img/bafici_cine.jpg" alt="publico festival bafici" class="foto2">
+            <img src="assets/img/evento-3.jpg" alt="publico festival bafici" class="foto3">
+            <img src="assets/img/museo-1.jpg" alt="museo de salta" class="foto4">
+            <img src="assets/img/teatro-2.jpg" alt="actores de obra de teatro en tarima" class="foto5">
+            <img src="assets/img/g6.jpg" alt="puesta de obra de teatro" class="foto6">
+            <img src="assets/img/aida_redes_web-768x432.png" alt="festival carmen teatro colon" class="foto7">
+            <img src="assets/img/carmen_redes_web-768x432.png" alt="festival aida teatro colon" class="foto8">
         </section>
 
         <!--* CARTELERA -->
@@ -136,7 +138,7 @@
                 <p class="intro">BIENVENIDOS A VERANO 25: UNA TEMPORADA DE TEATRO QUE REVELA LOS SECRETOS EN CADA VERANO EN MAR DEL PLATA</p>
                 <div class="entradas">
                     <p>Adquiere tus entradas:</p>
-                    <ul>
+                    <ul class="enlace">
                         <li><a href="">Gran Teatro</a></li>
                         <li><a href="">Tu Entrada en línea</a></li>
                     </ul>
@@ -152,7 +154,7 @@
                         </div>
                     </article>
                     <article class="obras">
-                        <img src="assets/img/cartelera_2.jpg" alt="">
+                        <img src="assets/img/cartelera_2.jpg" alt="Obra de teatro la jenny">
                         <p class="fecha"><span>30 de febrero</span> </p>
                         <p class="intro">LA JENNY</p>
                         <div>
@@ -197,8 +199,6 @@
                         <a href="#"><i class="fa-solid fa-phone"></i></i>(11)2296-5301</a>
                         <a href="#"><i class="fa-brands fa-facebook"></i>Movida Cultural</a>
                         <a href="#"><i class="fa-brands fa-instagram"></i>movida_cultural</a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i>mcultural</a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i>movida_cultural</a>
                     </ul>
                 </div>    
             </div>
@@ -210,7 +210,7 @@
                             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tucorre@correo.com" required>
                         </div>
-                        <button type="submit" class="btn btn_suscribir">Suscribir</button>
+                        <button type="submit" class="boton">Suscribir</button>
                     </form>
                 </div>
             </div>

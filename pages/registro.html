@@ -14,7 +14,7 @@
 </head>   
 <body > 
     <!--* BARRA DE NAVEGACIÓN  -->
-    <header >
+    <header class="pag_internas">
         <nav class="navbar navbar-expand-md navbar-light bg-transparent menu">
             <div class="container-fluid">
                 <a class="navbar-brand"  href="../index.html">
@@ -43,120 +43,39 @@
                 </div>
             </div>
         </nav>
-            <!--* HEADER CARRUSEL  -->
-        <section id="carouselExampleCaptions" class="carousel slide carrusel" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner ">
-                <div class="carousel-item active carrusel_img">
-                    <img src="../assets/img/museo.jpg" class="d-block w-100" alt="escultura de uno los grandes museos de Italia">
-                    <div class="carousel-caption d-none d-md-block carrusel_tex">
-                        <p>Museo</p>
-                        <p>Escultura de uno los grandes museos de Italia.</p>
-                    </div>
-                </div>
-                <div class="carousel-item carrusel_img">
-                    <img src="../assets/img/cine.jpg" class="d-block w-100" alt="Banner del Festival de Cine en Londres">
-                    <div class="carousel-caption d-none d-md-block carrusel_tex">
-                        <p>Cine</p>
-                        <p>Banner del Festival de Cine en Londres</p>
-                    </div>
-                </div>
-                <div class="carousel-item carrusel_img">
-                    <img src="../assets/img/teatro-1.jpg" class="d-block w-100" alt="Obra de teatro Las Cautivas">
-                    <div class="carousel-caption d-none d-md-block carrusel_tex">
-                        <p>Teatro</p>
-                        <p>Obra de teatro Las Cautivas.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </section>
-    </header>
-        
+    </header>      
     <main>
-        <!--* NOTICIAS  -->
-        <section class="noticias">
-            <h1>EVENTOS</h1>
-            <div class="tarjetas">
-                <div class="tarjeta">
-                    <img src="./assets/img/museo-salta.jpg" alt="">
-                    <div>
-                        <h2 class="tarjeta_titulo">Museo de Salta</h2>
-                        <span>7 de febrero</span>
+        <!--* FORMULARIO  -->
+        <section class="formulario text-white">
+            <hr>
+            <h1>Registrate</h1>
+            <hr>
+            <form class="form_registro">
+                <div class=" form_datos mb-2">
+                    <label for="TextInput" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombreApellido" aria-describedby="emailHelp" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class=" form_datos mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tucorre@correo.com" required>
+                </div>
+                <div class=" form_datos mb-2">
+                    <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                    <div class="col-auto">
+                        <input type="password" id="Contraseña" class="form-control" aria-describedby="passwordHelpInline">
+                        <span id="passwordHelpInline" class="form-text">
+                            Debe ser entre 8-20 carácteres.
+                        </span>
+                        <label for="inputPassword6" class="col-form-label">Confirmar contraseña</label>
+                        <input type="password" id="Contraseña" class="form-control" aria-describedby="passwordHelpInline">
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/poster-cine.jpg" alt="">
-                    <div>
-                        <h2 class="tarjeta_titulo">La Dolce Vita</h2>
-                        <span>8 de febrero</span>
-                    </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn_suscribir">Enviar</button>
                 </div>
-                <div class="tarjeta">
-                    <img src="./assets/img/poster-teatro.jpg" alt="">
-                    <div>
-                        <h2 class="tarjeta_titulo">Romeo y Julieta</h2>
-                        <span>8 de marzo</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--* GALERÍA  -->
-        <section class="galeria ">
-            <img src="assets/img/evento-1.jpg" alt="" class="foto1">
-            <img src="assets/img/evento-2.jpg" alt="" class="foto2">
-            <img src="assets/img/evento-3.jpg" alt="" class="foto3">
-            <img src="assets/img/evento-4.jpg" alt="" class="foto4">
-            <img src="assets/img/evento-1.jpg" alt="" class="foto5">
-            <img src="assets/img/evento-2.jpg" alt="" class="foto6">
-            <img src="assets/img/evento-3.jpg" alt="" class="foto7">
-            <img src="assets/img/evento-4.jpg" alt="" class="foto8">
-        </section>
-
-        <!--* CARTELERA -->
-        <section class="cartelera">
-            <div class="cartelera_col1">
-                <p class="lugar">Gran Teatro</p>
-                <span class="cartelera_titulo">Obras Confirmadas</span>
-                <p class="intro">BIENVENIDOS A VERANO 25: UNA TEMPORADA DE TEATRO QUE REVELA LOS SECRETOS EN CADA VERANO EN MAR DEL PLATA</p>
-                <div class="entradas">
-                    <p>Adquiere tus entradas:</p>
-                    <ul>
-                        <li><a href="">Gran Teatro</a></li>
-                        <li><a href="">Tu Entrada en línea</a></li>
-                    </ul>
-                </div>
-            </div>
-                <div class="cartelera_col2">
-                    <article class="obras">
-                        <img src="assets/img/cartelera_1.jpg" alt="obra una familia de locos">
-                        <p class="fecha"><span>24 de febrero</span> </p>
-                        <p class="intro">UNA FAMILIA DE LOCOS</p>
-                        <div>
-                            <p class="sinopsis">Dirección de Marcos “Bicho” Gómez. La producción general es de Miguel Pardo y Chato Prada.</p>
-                        </div>
-                    </article>
-                    <article class="obras">
-                        <img src="assets/img/cartelera_2.jpg" alt="">
-                        <p class="fecha"><span>30 de febrero</span> </p>
-                        <p class="intro">LA JENNY</p>
-                        <div>
-                            <p class="sinopsis">Wali Iturriaga, el Artista más premiado de los últimos años vuelve a Mar del Plata con su Show "La Jenny ¿Dónde Está Juan Carlos?"</p>
-                        </div>
-                    </article>
-                </div>
+                
+            </form>
         </section>
     </main>
     <hr>
@@ -186,7 +105,7 @@
                     
                 </div>
             </div>
-            <div class="footer_col2">
+            <div>
                 <p>Comunicate con nosotros</p>
                 <div>    
                     <ul class="opc_redes">
@@ -199,7 +118,7 @@
                     </ul>
                 </div>    
             </div>
-            <div class="footer_col3">
+            <div>
                 <p>Suscribete a nuestro Newsletter</p>
                 <div>
                     <form>

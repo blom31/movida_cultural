@@ -8,18 +8,18 @@
     body{
         background-color: #20231f;
     }
-    .index_pag .carousel{
+    .index_pag .carousel{ /**para mantener el carrusel activo en el index*/
         display: block;
     }
     header{
         min-height: 100vh;
     }
-    .pag_internas{
+    .pag_internas{ /**corrige el alto del header en las pag donde el carrusel esta oculro*/
         min-height: auto;
     }
     
     .carousel{
-        display: none;
+        display: none;/**oculta el carrusel en el resto de las paginas distintas al index*/
     }
 
     /** Menu  fijo superpuesto al carrusel */
@@ -33,8 +33,15 @@
 }
 .alinear{
     justify-content: space-evenly;
-    font-weight: 300;
 }
+.alinear .nav-item .nav-link {
+    color: white;
+    font-size: large;
+}
+.alinear .nav-item .nav-link:hover{
+    transform: scale(1.05);
+}
+
  /**Carrusel */
 .carrusel{
     position: relative;
@@ -125,7 +132,19 @@
 .foto8{
     grid-area: foto8;
 }
-.galeria img {
+.galeria2filas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Para la primera y última fila */
+    grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr);
+    grid-template-areas:
+        "foto1 foto2 foto3 "
+        "foto4 foto5 foto5" ;
+    gap: 15px;
+    width: 90%; /* Ajusta el ancho del contenedor */
+    height: 70vh; /* Define la altura total de la galería */
+    margin: 6em auto 0 auto;
+}
+.galeria, .galeria2filas img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -172,19 +191,18 @@
 .entradas p{
     color: white;
 }
-.entradas ul{
+.enlace{
     list-style: none;
 }
-.entradas a {
+.enlace a {
     text-decoration: none;
     color: #00dbe5;
 }
-.entradas a:hover {
+.enlace a:hover {
     color: #99f04d;
 }
 .cartelera_col2{
     flex: 1;
-    min-width: 300px;
     display: flex;
     justify-content: space-around;
 }
@@ -254,8 +272,23 @@ hr{
     text-decoration: none;
     color: white;
 }
-.btn_suscribir{
-    background-color: #99f04d;
+.boton {
+    display: inline-block;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #00dbe5; 
+    color: rgb(48, 46, 46); 
+    font-size: 16px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.boton:hover {
+    background-color: #99f04d; 
+    transform: scale(1.05); /* Pequeño efecto de crecimiento */
+}
+.boton:active {
+    transform: scale(0.98); /* Efecto de presión */
 }
 .copy{
     font-size: 12px;
@@ -277,10 +310,13 @@ hr{
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to right, #080808d0, #080808de), url(../assets/img/foto-registsro.jpg);
+    height: 80vh;
 }
 .form_registro{
-    width: 250px;
+    width: 300px;
+    padding: 25px;
     text-align: left;
+    backdrop-filter: blur(10px);
 }
 
  /*! Media Queries */
@@ -292,8 +328,8 @@ hr{
             background-color: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
         }
-        .registro{
-            display: none;
+        .fondo_collapse{
+            backdrop-filter: blur(10px);
         }
         .tarjetas{
             padding: 5px;
@@ -354,6 +390,7 @@ hr{
             backdrop-filter: none;
         }
         .tarjetas{
+            margin-top:1em ;
             flex-direction: column;
             align-items: center;
         }

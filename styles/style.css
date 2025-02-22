@@ -74,7 +74,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
-    margin-top: 2.5em;
 }
 .tarjeta{
     width: 300px;
@@ -321,7 +320,6 @@ hr{
             backdrop-filter: blur(10px);
         }
         .tarjetas{
-            padding: 5px;
             margin-bottom: 1em;
         }
         .galeria {
@@ -372,14 +370,13 @@ hr{
 
     @media screen and (max-width: 425px){
         header{
-            min-height: 60vh;
+            min-height: 50vh;
         }
         .menu{
             background-color: initial;
             backdrop-filter: none;
         }
         .tarjetas{
-            margin-top:1em ;
             flex-direction: column;
             align-items: center;
         }
@@ -392,8 +389,4 @@ hr{
             min-height: 30vh;
         }
     }
-    @media screen and (max-width: 320px){
-        header{
-            min-height: 20vh;
-        }
-    }
+    

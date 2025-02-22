@@ -40,6 +40,7 @@
 }
 .alinear .nav-item .nav-link:hover{
     transform: scale(1.05);
+    color: #99f04d;
 }
 
  /**Carrusel */
@@ -132,19 +133,7 @@
 .foto8{
     grid-area: foto8;
 }
-.galeria2filas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Para la primera y última fila */
-    grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr);
-    grid-template-areas:
-        "foto1 foto2 foto3 "
-        "foto4 foto5 foto5" ;
-    gap: 15px;
-    width: 90%; /* Ajusta el ancho del contenedor */
-    height: 70vh; /* Define la altura total de la galería */
-    margin: 6em auto 0 auto;
-}
-.galeria, .galeria2filas img {
+.galeria img {
     width: 100%;
     height: 100%;
     object-fit: cover;

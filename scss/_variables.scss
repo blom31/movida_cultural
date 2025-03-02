@@ -1,0 +1,21 @@
+$text-primary: #f5f5f5;
+$text-secondary: #00dbe5;
+$text-tertiary:#99f04d;
+$text-fourth:#fff2a2; 
+$bg-color:#20231f; //fondo de toda la pag
+
+@mixin fecha( $color, $size, $weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin lugar($color, $size, $style) {
+    color: $color;
+    font-size: $size;
+    font-style: $style;
+}
+@mixin enlaces ($estilo, $decoracion, $color){
+    list-style: $estilo;
+    text-decoration: $decoracion;
+    color: $color;
+}

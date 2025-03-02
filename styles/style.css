@@ -104,19 +104,20 @@
         "foto4 foto5 foto5" 
         "foto6 foto7 foto8";
     gap: 15px;
-    width: 90%; /* Ajusta el ancho del contenedor */
-    height: 70vh; /* Define la altura total de la galería */
+    width: 90%; /** Ajusta el ancho del contenedor */
+    height: 70vh; /** Define la altura total de la galería */
     margin: 6em auto 0 auto;
 }   
-.gal_interna .galeria {/*galería para las paginas internas*/
+.gal_interna .galeria {/**galería para las paginas internas*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(150px, 1fr));
     grid-template-areas:
         "foto1 foto2 foto3"
         "foto4 foto5 foto5";
-    height: 70vh; /* Ajusta la altura automáticamente */
+    height: 70vh; 
 }
+
 .foto1{
     grid-area: foto1;
 }
@@ -229,19 +230,33 @@ hr{
     color: #99f04d;
 }
 /** Footer*/
+.marca{
+    display: flex;
+    margin-left: 25px;
+    gap: 5px;
+}
+.marca img{
+    width: 30px;
+    height: 30px;
+}
+.marca p{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
 .foot{
     margin-top: 2em;
     display: flex;
     justify-content: space-around;
+    font-size: 14px;
+}
+.footer_col2, .footer_col3 p{
+    color: #00dbe5;
+    font-weight: 500;
 }
 
-.marca{
-    display: flex;
-    gap: 5px;
-}
-.marca p{
-    margin: 5px;
-    font-weight: 600;
+.footer_col2, .footer_col3{
+    text-align: center;
 }
 .list_col1{
     margin-top: 5px;
@@ -250,24 +265,34 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 0;
 }
 .opciones a{
     text-decoration: none;
     color: white;
 }
+.opciones li{
+    list-style: none;
+}
 .opc_redes{
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 0;
 }
-.opc_redes i{
+.opc_redes li{
+    list-style: none;
+}
+.opc_redes li a i{
     padding-right: 10px;
 }
 .opc_redes a{
     text-decoration: none;
     color: white;
+}
+.text_resumido{
+    display: none;
+}
+.form-control{
+    font-size: 12px;
 }
 .boton {
     display: inline-block;
@@ -276,16 +301,16 @@ hr{
     border-radius: 8px; 
     background-color: #00dbe5; 
     color: rgb(48, 46, 46); 
-    font-size: 16px; 
+    font-size: 14px; 
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .boton:hover {
     background-color: #99f04d; 
-    transform: scale(1.05); /* Pequeño efecto de crecimiento */
+    transform: scale(1.05); /** Pequeño efecto de crecimiento */
 }
 .boton:active {
-    transform: scale(0.98); /* Efecto de presión */
+    transform: scale(0.98); /** Efecto de presión */
 }
 .copy{
     font-size: 12px;
@@ -318,9 +343,6 @@ hr{
 
  /*! Media Queries */
     @media screen and (max-width: 768px){
-        /* header{
-            min-height: 85vh;
-            } */
         .menu{
             background-color: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
@@ -352,7 +374,7 @@ hr{
             flex-direction: column; 
             align-items: center;
             margin-top: 0;
-            padding: 0;
+            padding: 1em;
         }
         .cartelera_col1 {
             text-align: center; 
@@ -383,16 +405,10 @@ hr{
         .sinopsis{
             display: none;
         }
-        .foot{
-            flex-direction: column;
-            align-items: center;
-        }
     }
 
     @media screen and (max-width: 425px){
-        /* header{
-            min-height: 50vh;
-        } */
+
         .menu{
             background-color: initial;
             backdrop-filter: none;
@@ -404,10 +420,20 @@ hr{
         .foto5, .foto6, .foto7, .foto8{
             display: none;
         }
+        .foot{
+            font-size: 12px;
+            padding: 0.5em;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .text_completo{
+            display: none;
+        }
+        .text_resumido{
+            display: inline;
+        }
     }    
     @media screen and (max-width: 375px){
-        /* header{
-            min-height: 30vh;
-        } */
+        
     }
     

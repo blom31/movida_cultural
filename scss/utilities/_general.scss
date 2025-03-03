@@ -20,13 +20,21 @@ hr{
     @include lugar($text-fourth, 1.5em, italic)
 }
 .enlaces {
-    @include enlaces(none,none, $text-secondary)
+    @include enlaces(none)
+}
+.a{
+    @include a(none, $text-secondary)
 }
 a:hover{
     color: $text-tertiary;
     font-size: 1.1em;
 }
-
+.titulo_cartelera{
+    @include titulo_cartelera($text-tertiary,3.5em)
+}
+.intro{
+    color: $text-primary;
+}
 .formulario{
     @extend .evento
 }

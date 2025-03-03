@@ -1,0 +1,27 @@
+$text-primary: #f5f5f5;
+$text-secondary: #00dbe5;
+$text-tertiary:#8bf82c;
+$text-fourth:#fff2a2; 
+$bg-color:#20231f; //fondo de toda la pag
+
+@mixin fecha( $color, $size, $weight){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin lugar($color, $size, $style) {
+    color: $color;
+    font-size: $size;
+    font-style: $style;
+}
+@mixin enlaces ($estilo){
+    list-style: $estilo;
+}
+@mixin a ($decoracion, $color){
+    text-decoration: $decoracion;
+    color: $color;
+}
+@mixin titulo_cartelera ($color, $size){
+    color: $color;
+    font-size: $size;
+}

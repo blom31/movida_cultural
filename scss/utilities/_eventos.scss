@@ -1,0 +1,12 @@
+.evento{
+    text-align: center;
+}
+.tarjetas{
+    @include flex(flex,row, wrap,center,center,80px)
+}
+.tarjeta{
+    @include tarjeta(300px,500px)
+}
+.evento_img{
+    @include img(100%,100%,cover,15px 15px 10px black, 20px)
+}

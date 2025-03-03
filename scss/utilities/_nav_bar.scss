@@ -1,0 +1,13 @@
+/*! ESTILOS DEL NAV BAR EL UNICO BLOQUE DE CÓDIGO QUE NO SE REPITE*/
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+.alinear{
+    justify-content: space-evenly;
+    font-size: 1.2em;
+}

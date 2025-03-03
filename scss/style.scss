@@ -1,18 +1,8 @@
 @import "variables";
-@import"utilities/general";
-@import"utilities/nav_bar";
+@import "utilities/layout";
+@import "utilities/general";
+@import "utilities/nav_bar";
 @import "utilities/carousel";
 
-.fecha{
-    @include fecha($text-tertiary, 1em, 200)
-}
-.lugar{
-    @include lugar($text-fourth, 1.5em, italic)
-}
-.enlaces {
-    @include enlaces(none,none, $text-secondary)
-}
-a:hover{
-    color: $text-tertiary;
-    font-size: 1.1em;
-}
+
+

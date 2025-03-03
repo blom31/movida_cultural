@@ -6,3 +6,35 @@ h1, h2{
     font-style: italic;
     color: $text-primary;
 }
+hr{
+    border: 1px solid $text-tertiary; 
+}
+.fecha{
+    @include fecha($text-tertiary, 1em, 200)
+}
+.lugar{
+    @include lugar($text-fourth, 1.5em, italic)
+}
+.enlaces {
+    @include enlaces(none,none, $text-secondary)
+}
+a:hover{
+    color: $text-tertiary;
+    font-size: 1.1em;
+}
+.noticia{
+    text-align: center;
+}
+.noticias, .formulario{
+    @extend .noticia
+}
+.tarjetas{
+    @include flex(flex,row, wrap,center,center,80px)
+}
+.tarjeta{
+    @include tarjeta(300px,500px)
+}
+
+.noticia_img{
+    @include img(100%,100%,cover,15px 15px 10px black)
+}

@@ -1,0 +1,17 @@
+@mixin flex($dis,$direccion,$corte,$just, $align, $separacion){
+    display: $dis;
+    flex-flow: $direccion $corte;
+    justify-content: $just;
+    align-items: $align;
+    gap: $separacion;
+}
+@mixin tarjeta ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin img($ancho, $alto, $cover,$sombra){
+    width: $ancho;
+    height: $alto;
+    object-fit: $cover;
+    box-shadow: $sombra;
+}

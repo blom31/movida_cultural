@@ -1,0 +1,57 @@
+/*! ESTILO DEL FOOTER*/
+.marca{
+    display: flex;
+    margin-left: 25px;
+    gap: 5px;
+}
+.marca img{
+    width: 30px;
+    height: 30px;
+}
+.marca p{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.foot{
+    @include flex(flex,row,wrap,space-around,center, 0);
+    margin-top: 2em;
+    font-size: 14px;
+}
+.titulo {
+    @include titulo($text-secondary,1.2em);
+    font-weight: 500;
+}
+
+.a{
+    color: $text-primary;
+}
+
+.text_resumido{
+    display: none;
+}
+.form-control{
+    font-size: 12px;
+}
+.boton {
+    display: inline-block;
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #00dbe5; 
+    color: rgb(48, 46, 46); 
+    font-size: 14px; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.boton:hover {
+    background-color: #99f04d; 
+    transform: scale(1.05); /** Pequeño efecto de crecimiento */
+}
+.boton:active {
+    transform: scale(0.98); /** Efecto de presión */
+}
+.copy{
+    font-size: 12px;
+    margin: 15px;
+}

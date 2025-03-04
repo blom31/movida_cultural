@@ -29,10 +29,10 @@ a:hover{
     color: $text-tertiary;
     font-size: 1.1em;
 }
-.titulo_cartelera{
-    @include titulo_cartelera($text-tertiary,3.5em)
+.titulo{
+    @include titulo($text-tertiary,3.5em)
 }
-.intro{
+.texto{
     color: $text-primary;
 }
 .formulario{

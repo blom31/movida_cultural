@@ -25,3 +25,13 @@ $bg-color:#20231f; //fondo de toda la pag
     color: $color;
     font-size: $size;
 }
+@mixin boton ($padding, $border, $radio, $b_color, $color, $size, $_align){
+    display: inline-block;
+    padding: $padding; 
+    border: $border;
+    border-radius: $radio; 
+    background-color: $b_color; 
+    color: $color; 
+    font-size: $size; 
+    text-align: $_align
+}

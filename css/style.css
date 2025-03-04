@@ -74,6 +74,10 @@ a:hover {
   text-align: center;
 }
 
+.pag_int {
+  margin-top: 65px;
+}
+
 .tarjetas {
   display: flex;
   flex-flow: row wrap;

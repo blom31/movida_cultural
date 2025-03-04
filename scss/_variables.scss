@@ -21,7 +21,7 @@ $bg-color:#20231f; //fondo de toda la pag
     text-decoration: $decoracion;
     color: $color;
 }
-@mixin titulo_cartelera ($color, $size){
+@mixin titulo ($color, $size){
     color: $color;
     font-size: $size;
 }

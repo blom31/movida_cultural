@@ -17,10 +17,7 @@
     .pag_internas{ /**corrige el alto del header en las pag donde el carrusel esta oculro*/
         min-height: auto;
     }
-    
-    .carousel{
-        display: none;/**oculta el carrusel en el resto de las paginas distintas al index*/
-    }
+
 
     /** Menu  fijo superpuesto al carrusel */
 .menu {

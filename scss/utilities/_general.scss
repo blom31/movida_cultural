@@ -29,8 +29,12 @@ a:hover{
     color: $text-tertiary;
     font-size: 1.1em;
 }
-.titulo{
-    @include titulo($text-tertiary,3.5em)
+.boton:hover{
+    background-color: $text-tertiary;
+    transform: scale(1.05);
+}
+.boton_act:active {
+    transform: scale(0.98); /** Efecto de presión */
 }
 .texto{
     color: $text-primary;

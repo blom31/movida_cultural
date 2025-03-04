@@ -42,9 +42,13 @@ a:hover {
   font-size: 1.1em;
 }
 
-.titulo {
-  color: #8bf82c;
-  font-size: 3.5em;
+.boton:hover, .foot_boton:hover {
+  background-color: #8bf82c;
+  transform: scale(1.05);
+}
+
+.boton_act:active, .foot_boton:active {
+  transform: scale(0.98); /** Efecto de presión */
 }
 
 .texto {
@@ -165,6 +169,11 @@ a:hover {
   margin-top: 80px;
 }
 
+.cartelera_titulo {
+  color: #8bf82c;
+  font-size: 3.5em;
+}
+
 .cartelera_col2 {
   display: flex;
   flex-flow: row wrap;
@@ -216,13 +225,18 @@ a:hover {
   font-size: 14px;
 }
 
-.titulo {
+.foot_titulo {
   color: #00dbe5;
   font-size: 1.2em;
   font-weight: 500;
 }
 
-.a {
+.enlaces {
+  list-style: none;
+}
+
+.foot_a {
+  text-decoration: none;
   color: #f5f5f5;
 }
 
@@ -234,25 +248,17 @@ a:hover {
   font-size: 12px;
 }
 
-.boton {
+.foot_boton {
   display: inline-block;
   padding: 5px 10px;
   border: none;
   border-radius: 8px;
   background-color: #00dbe5;
-  color: rgb(48, 46, 46);
+  color: #302E2E;
   font-size: 14px;
   text-align: center;
+  display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.boton:hover {
-  background-color: #99f04d;
-  transform: scale(1.05); /** Pequeño efecto de crecimiento */
-}
-
-.boton:active {
-  transform: scale(0.98); /** Efecto de presión */
 }
 
 .copy {

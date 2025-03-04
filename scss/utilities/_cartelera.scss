@@ -10,6 +10,9 @@
     margin-left: 5em;
     margin-top: 80px;
 }
+.cartelera_titulo{
+    @include titulo($text-tertiary,3.5em)
+}
 .cartelera_col2{
     @include flex(flex,row,wrap,space-around,center,0);
     flex: 1;

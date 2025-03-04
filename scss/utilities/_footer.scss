@@ -18,13 +18,15 @@
     margin-top: 2em;
     font-size: 14px;
 }
-.titulo {
+.foot_titulo {
     @include titulo($text-secondary,1.2em);
     font-weight: 500;
 }
-
-.a{
-    color: $text-primary;
+.enlaces {
+    @include enlaces(none)
+}
+.foot_a{
+    @include a(none, $text-primary)
 }
 
 .text_resumido{
@@ -33,23 +35,16 @@
 .form-control{
     font-size: 12px;
 }
-.boton {
+.foot_boton {
+    @include boton(5px 10px, none, 8px, $text-secondary, #302E2E, 14px, center );
     display: inline-block;
-    padding: 5px 10px; 
-    border: none;
-    border-radius: 8px; 
-    background-color: #00dbe5; 
-    color: rgb(48, 46, 46); 
-    font-size: 14px; 
-    text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.boton:hover {
-    background-color: #99f04d; 
-    transform: scale(1.05); /** Pequeño efecto de crecimiento */
+.foot_boton{
+    @extend .boton;
 }
-.boton:active {
-    transform: scale(0.98); /** Efecto de presión */
+.foot_boton{
+    @extend .boton_act;
 }
 .copy{
     font-size: 12px;

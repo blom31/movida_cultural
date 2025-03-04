@@ -1,6 +1,9 @@
 .evento{
     text-align: center;
 }
+.pag_int{
+    margin-top: 65px;
+}
 .tarjetas{
     @include flex(flex,row, wrap,center,center,80px)
 }

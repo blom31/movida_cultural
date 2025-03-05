@@ -201,6 +201,21 @@ a:hover {
   margin-bottom: 20px;
 }
 
+/* MEDIA QUERIES CARTELERA */
+@media (max-width: 768px) {
+  .cartelera {
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 0;
+  }
+  .cartelera_col1 {
+    margin-left: 0;
+    padding: 1em;
+  }
+  .cartelera_titulo {
+    font-size: 1.7em;
+  }
+}
 /*! ESTILO DEL FOOTER*/
 .marca {
   display: flex;

@@ -50,3 +50,20 @@
     font-size: 12px;
     margin: 15px;
 }
+/* MEDIA QUERIES FOOTER */
+@media (max-width: 768px) {
+    .foot{
+        font-size: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+    }.text_completo{
+        display: none;
+    }
+    .text_resumido{
+        display: inline;
+    }
+    .foot_titulo {
+        @include titulo($text-secondary,1em);
+        font-weight: 400;
+    }
+}

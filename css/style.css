@@ -99,6 +99,12 @@ a:hover {
   margin-bottom: 20px;
 }
 
+/* MEDIA QUERIES EVENTO */
+@media (max-width: 768px) {
+  .tarjeta {
+    margin-top: 1.2em;
+  }
+}
 /*! ESTILO DE LA GALERIA DEL INDEX*/
 .galeria {
   display: grid;
@@ -110,7 +116,6 @@ a:hover {
 
 .galeria {
   width: 90%; /** Ajusta el ancho del contenedor */
-  height: 80vh; /** Define la altura total de la galería */
   margin: 8em auto 0 auto;
 }
 
@@ -206,11 +211,11 @@ a:hover {
   .cartelera {
     flex-direction: column;
     padding: 1em;
-    margin-top: 0;
   }
   .cartelera_col1 {
     margin-left: 0;
     padding: 1em;
+    margin-top: 0;
   }
   .cartelera_titulo {
     font-size: 1.7em;
@@ -283,6 +288,26 @@ a:hover {
 .copy {
   font-size: 12px;
   margin: 15px;
+}
+
+/* MEDIA QUERIES FOOTER */
+@media (max-width: 768px) {
+  .foot {
+    font-size: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .text_completo {
+    display: none;
+  }
+  .text_resumido {
+    display: inline;
+  }
+  .foot_titulo {
+    color: #00dbe5;
+    font-size: 1em;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

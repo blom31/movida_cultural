@@ -1,0 +1,26 @@
+@mixin flex($dis,$direccion,$corte,$just, $align, $separacion){
+    display: $dis;
+    flex-flow: $direccion $corte;
+    justify-content: $just;
+    align-items: $align;
+    gap: $separacion;
+}
+@mixin tarjeta ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin img($ancho, $alto, $cover,$sombra,$margen){
+    width: $ancho;
+    height: $alto;
+    object-fit: $cover;
+    box-shadow: $sombra;
+    margin-bottom: $margen;
+}
+
+@mixin grid ($columna, $fila, $gap){
+    display: grid;
+    grid-template-columns: repeat($columna, 1fr); /* Para la primera y última fila */
+    grid-template-rows: repeat($fila, minmax(150px, 1fr));
+    gap: $gap;    
+}
+

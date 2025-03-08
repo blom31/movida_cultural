@@ -1,0 +1,23 @@
+.evento{
+    text-align: center;
+}
+.pag_int{
+    margin-top: 65px;
+}
+.tarjetas{
+    @include flex(flex,row, wrap,center,center,80px)
+}
+.tarjeta{
+    @include tarjeta(300px,500px)
+}
+.evento_img{
+    @include img(100%,100%,cover,15px 15px 10px black, 20px)
+}
+
+
+/* MEDIA QUERIES EVENTO */
+@media (max-width: 768px){
+    .tarjeta{
+        margin-top: 1.2em;
+    }
+}

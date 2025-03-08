@@ -1,0 +1,17 @@
+
+/*! ESTILOS DEL CARRUSEL*/
+.carrusel{
+    position: relative;
+    top: 0px;
+    width:100%;
+}
+.carrusel_img img{
+    width: 100%;
+    height: auto; 
+    max-height: 100vh; 
+    object-fit: cover;
+}
+.carrusel_tex{
+    backdrop-filter: blur(2px);    
+    padding: 5px;
+}

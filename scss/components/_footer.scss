@@ -1,0 +1,69 @@
+/*! ESTILO DEL FOOTER*/
+.marca{
+    display: flex;
+    margin-left: 25px;
+    gap: 5px;
+}
+.marca img{
+    width: 30px;
+    height: 30px;
+}
+.marca p{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.foot{
+    @include flex(flex,row,wrap,space-around,center, 0);
+    margin-top: 2em;
+    font-size: 14px;
+}
+.foot_titulo {
+    @include titulo($text-secondary,1.2em);
+    font-weight: 500;
+}
+.enlaces {
+    @include enlaces(none)
+}
+.foot_a{
+    @include a(none, $text-primary)
+}
+
+.text_resumido{
+    display: none;
+}
+.form-control{
+    font-size: 12px;
+}
+.foot_boton {
+    @include boton(5px 10px, none, 8px, $text-secondary, #302E2E, 14px, center );
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.foot_boton{
+    @extend .boton;
+}
+.foot_boton{
+    @extend .boton_act;
+}
+.copy{
+    font-size: 12px;
+    margin: 15px;
+}
+/* MEDIA QUERIES FOOTER */
+@media (max-width: 768px) {
+    .foot{
+        font-size: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+    }.text_completo{
+        display: none;
+    }
+    .text_resumido{
+        display: inline;
+    }
+    .foot_titulo {
+        @include titulo($text-secondary,1em);
+        font-weight: 400;
+    }
+}

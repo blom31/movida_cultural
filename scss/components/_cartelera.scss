@@ -1,0 +1,49 @@
+/*! ESTILO DE LA SECCION CARTELERA*/
+.cartelera {
+    @include flex(flex, row, nowrap, center, center, 0);
+    margin-top: 2em;
+}
+
+.cartelera_col1 {
+    @include flex(flex, column, wrap, space-around, start, 0);
+    flex: 1;
+    margin-left: 5em;
+    margin-top: 80px;
+}
+
+.cartelera_titulo {
+    @include titulo($text-tertiary, 3.5em);
+}
+
+.cartelera_col2 {
+    @include flex(flex, row, wrap, space-around, center, 0);
+    flex: 1;
+}
+
+.obras {
+    max-width: 250px;
+    aspect-ratio: 3 / 4;
+    padding: 10px;
+}
+
+.cartelera_img {
+    @include img(100%, auto, cover, 15px 15px 10px black, 20px);
+}
+
+/* MEDIA QUERIES CARTELERA */
+@media (max-width: 768px) {
+    .cartelera {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .cartelera_col1 {
+        margin-left: 0;
+        padding: 1em;
+        margin-top: 0
+    }
+
+    .cartelera_titulo {
+        font-size: 1.7em;
+    }
+}

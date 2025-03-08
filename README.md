@@ -3,7 +3,8 @@
 
 - 🔭 Este es el proyecto del primer Modulo.
 - <h2>Movida Cultural</h2>
-- Puedes visitarlo aqui 👉 (blom31.github.io/movida_cultural/)
+- Puedes visitarlo aqui 👉 [Movida Cultural](blom31.github.io/movida_cultural/)
+ (blom31.github.io/movida_cultural/)
 
 
 <h3 align="left">Herramientas utilizadas:</h3>

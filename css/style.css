@@ -70,6 +70,25 @@ a:hover {
   font-size: 1.2em;
 }
 
+/*! ESTILOS DEL CARRUSEL*/
+.carrusel {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.carrusel_img img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.carrusel_tex {
+  backdrop-filter: blur(2px);
+  padding: 5px;
+}
+
 .evento, .formulario {
   text-align: center;
 }
@@ -117,6 +136,11 @@ a:hover {
 .galeria {
   width: 90%; /** Ajusta el ancho del contenedor */
   margin: 8em auto 0 auto;
+  height: 90vh;
+}
+
+.galeria div {
+  overflow: hidden;
 }
 
 .foto1 {
@@ -155,6 +179,11 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all ease-in-out 0.4s;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
 }
 
 /*! ESTILO DE LA SECCION CARTELERA*/
@@ -221,6 +250,22 @@ a:hover {
     font-size: 1.7em;
   }
 }
+.formulario {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(8, 8, 8, 0.8156862745), rgba(8, 8, 8, 0.8705882353)), url(../assets/img/foto-registsro.jpg);
+  height: 85vh;
+}
+
+.form_registro {
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
 /*! ESTILO DEL FOOTER*/
 .marca {
   display: flex;

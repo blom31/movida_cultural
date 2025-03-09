@@ -136,7 +136,11 @@ a:hover {
 .galeria {
   width: 90%; /** Ajusta el ancho del contenedor */
   margin: 8em auto 0 auto;
-  height: 80vh;
+  height: 90vh;
+}
+
+.galeria div {
+  overflow: hidden;
 }
 
 .foto1 {
@@ -175,6 +179,11 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all ease-in-out 0.4s;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
 }
 
 /*! ESTILO DE LA SECCION CARTELERA*/

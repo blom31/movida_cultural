@@ -1,0 +1,17 @@
+.formulario {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(8, 8, 8, 0.8156862745), rgba(8, 8, 8, 0.8705882353)), url(../assets/img/foto-registsro.jpg);
+  height: 85vh;
+}
+
+.form_registro {
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
+/*# sourceMappingURL=formularios.css.map */

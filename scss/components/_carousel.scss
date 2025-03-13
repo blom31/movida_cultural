@@ -12,6 +12,18 @@
     object-fit: cover;
 }
 .carrusel_tex{
-    backdrop-filter: blur(2px);    
-    padding: 5px;
+    height: 140px;
+    left: 10%;  
+    right: auto;  
+    top: 50%;    
+    transform: translateY(-50%); 
+    text-align: left; 
+    width: auto;
+    background: rgba(0, 0, 0, 0.202); 
+    padding: 10px;
+    border-radius: 5px;
+}
+.carrusel_tex p{
+    font-size: 3em;
+    font-family: "Old Standar TT";
 }
